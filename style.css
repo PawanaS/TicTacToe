@@ -1,0 +1,106 @@
+/* this star to select all the elements */
+* {
+    /* border-box-It guarantees that the content box shrinks to make space for the padding and borders */
+    box-sizing: border-box;
+}
+
+body {
+     /* margin: 50; 
+     padding : 50;  */
+    /* By using display flex in parent element, child elements automatically align within. */
+    display: flex;
+    justify-content: center;
+    /* The flexbox items are aligned at the center of the cross axis(centered vertically) */
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.players {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* If the content is larger than the maximum width, it will automatically change the height of the element. */
+    max-width: 200px;
+    /* to add that curvy border */
+    border-radius: 15px;
+    font: size 24px;
+    /* gives auto margin if given one side of it */
+    margin: auto;
+    margin-top: 5px; 
+}
+
+.players div {
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid red;
+    
+}
+
+.players div.active {
+    background: blue;
+    color: white;
+}
+
+.game-board{ 
+    /* grid system helps align page elements based on sequenced columns and rows */
+    display: grid;
+    grid-template-columns: repeat(3,auto); 
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    border: 2px solid blueviolet;
+    font: size 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.result{
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    /* z-index: 99; */
+    background: rgba(0,0,0,0.5)
+    /* this make position in fixed */
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* to place it in center */
+    flex-direction: column;
+    margin-bottom: 100px;   
+   
+}
+
+.result h1{
+    color:rgb(9, 13, 9);
+    font-size: 50px;
+    margin-top: 15px;
+}
+.result button{
+    font-size: 36px;
+    background: gray;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+     padding: 5px 5px; 
+     /* margin-top: 2px;  */
+
+    /* .inactive{
+        display: ;
+    } */
+
+}
+.disabled{
+    /* disable the any use of pointer(clicking,dragging, hovering,etc) */
+    pointer-events: none;
+}
