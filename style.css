@@ -62,6 +62,13 @@ body {
     align-items: center;
     cursor: pointer;
 }
+.cell.X{
+    color:black;
+}
+.cell.O{
+    color:red;
+
+}
 
 .result{
     background: rgba(0,0,0,0.5)
@@ -90,4 +97,6 @@ body {
      padding: 5px 5px; 
     
 }
-     
+     .disabled{
+        pointer-events: none;
+     }
