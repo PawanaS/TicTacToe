@@ -28,3 +28,6 @@ ex.windows 10
 www.w3schools.com
 https://www.youtube.com/@CodeWithHarry
 https://www.youtube.com/@KingofJavaScript
+
+Link to the live game
+[Gamelink]https://pawanas.github.io/TicTacToe/
