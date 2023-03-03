@@ -11,7 +11,7 @@ To start a new game, click the "Restart" button. Each Turn of "X" and "O" goes t
 
 - Two-player game (either against the computer or against another player)
 - Keeps track of each player's score
-- Easy-to-use click restart to start a new game
+- Easy-to-use click restart to start a new game 
 -
 
 ## Technologies Used
@@ -24,4 +24,7 @@ To start a new game, click the "Restart" button. Each Turn of "X" and "O" goes t
 ex.windows 10
 
 
-
+## Resources
+www.w3schools.com
+https://www.youtube.com/@CodeWithHarry
+https://www.youtube.com/@KingofJavaScript

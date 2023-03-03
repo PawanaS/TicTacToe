@@ -36,13 +36,13 @@ cellElements.forEach(cell => {
             // console.log(currentPlayer, "is a WINNER!")
             addInactive()
             //swapPlayer()
-            result_text.innerHTML = currentPlayer + "win the game!";
+            result_text.innerHTML = currentPlayer + "  win the game!";
             endGame()
         } else if (isDraw()) {
             // console.log("Draw the game!")
             addInactive()
-            result_text.innerHTML = currentPlayer + "Draw the game..";
-            endGame()
+            result_text.innerHTML = "The game is draw";
+            //endGame()
         } else {
            // game_board.cell.removeEventListener
             swapPlayer();
@@ -73,7 +73,7 @@ function isDraw() {
 
 function addInCell(cell, currentPlayer) {
     cell.innerHTML = currentPlayer;
-    cell.classList.add(currentPlayer);//add current players in the class currentList.
+    cell.classList.add(currentPlayer);//add current players in the classList.
 
 }
 function addInactive() {
@@ -99,5 +99,5 @@ function winnerCheck(currentPlayer) {
 
 }
 restart_btn.onclick = () => {
-    location.reload();//method reloads the current resource, like the Refresh button.
+    location.reload();//method reloads the current resource, when the Restart button is clicked.
 }
